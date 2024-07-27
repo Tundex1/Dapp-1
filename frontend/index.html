@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copy Trading Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Copy Trading Platform</h1>
+    <button id="connectWallet">Connect Wallet</button>
+    <div id="dashboard" style="display: none;">
+      <h2>User Dashboard</h2>
+      <p>Wallet Address: <span id="walletAddress"></span></p>
+      <button id="viewTraders">View Traders</button>
+      <div id="traders" style="display: none;">
+        <h3>Traders</h3>
+        <ul id="traderList"></ul>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
